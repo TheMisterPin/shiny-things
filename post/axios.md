@@ -165,13 +165,13 @@ async function fetchData(params: UrlParams): Promise<TransformedData[]> {
 
 ### Extended Checklist for Data Transformation with Nested Objects
 
--[] Nested Object Mapping: Ensure the transformation logic accurately maps and transforms nested objects. 🔄
--[] Complex Type Safety: Update TypeScript interfaces to reflect nested structures accurately. 🔍
--[] Comprehensive Error Handling: Adapt error handling to manage potential issues in nested data transformation. 🛠️
--[] Efficient Data Parsing: Optimize parsing logic for nested structures to ensure performance and readability. 📊
--[] Unit Testing: Extend unit tests to cover nested object transformations, ensuring data integrity and logic reliability. ✅
--[] Conclusion
--[] By incorporating nested object handling into your Axios configuration and data transformation logic, your TypeScript application can effectively manage complex data structures from API responses. This setup is crucial for applications dealing with intricate data models, ensuring both flexibility and type safety.
+- [] Nested Object Mapping: Ensure the transformation logic accurately maps and transforms nested objects. 🔄
+- [] Complex Type Safety: Update TypeScript interfaces to reflect nested structures accurately. 🔍
+- [] Comprehensive Error Handling: Adapt error handling to manage potential issues in nested data transformation. 🛠️
+- [] Efficient Data Parsing: Optimize parsing logic for nested structures to ensure performance and readability. 📊
+- [] Unit Testing: Extend unit tests to cover nested object transformations, ensuring data integrity and logic reliability. ✅
+- [] Conclusion
+- [] By incorporating nested object handling into your Axios configuration and data transformation logic, your TypeScript application can effectively manage complex data structures from API responses. This setup is crucial for applications dealing with intricate data models, ensuring both flexibility and type safety.
 
 ## Step 5: Implementing the Data Fetch and Display in React
 
