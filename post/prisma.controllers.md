@@ -8,6 +8,21 @@ This guide explains how to create controllers for managing database operations u
   - [Table of Contents](#table-of-contents)
   - [Adding Data with Relationships](#adding-data-with-relationships)
     - [Creating a Movie Controller 🎬](#creating-a-movie-controller-)
+- [Prisma Controllers and Relationships Guide 🛠️](#prisma-controllers-and-relationships-guide-️-1)
+  - [Table of Contents](#table-of-contents-1)
+  - [Adding Data with Relationships](#adding-data-with-relationships-1)
+    - [Creating a Movie Controller 🎬](#creating-a-movie-controller--1)
+  - [Initializing Relationships 🧩](#initializing-relationships-)
+  - [Data Retrieval Techniques](#data-retrieval-techniques)
+  - [Field Exclusion/Inclusion 🛠️](#field-exclusioninclusion-️)
+    - [Exclude Fields Example](#exclude-fields-example)
+    - [Include Fields Example](#include-fields-example)
+  - [Handling One-to-Many Relationships 🌳](#handling-one-to-many-relationships-)
+  - [Field Exclusion/Inclusion 🛠️](#field-exclusioninclusion-️-1)
+    - [Exclude Fields Example](#exclude-fields-example-1)
+    - [Include Fields Example](#include-fields-example-1)
+    - [Handling One-to-Many Relationships 🌳](#handling-one-to-many-relationships--1)
+  - [Implementing Pagination 📄](#implementing-pagination-)
 
 ## Adding Data with Relationships
 
@@ -69,6 +84,8 @@ async function getMoviesByTitle(title: string) {
     where: { title },
   });
 }
+```
+
 # Prisma Controllers and Relationships Guide 🛠️
 
 This guide explains how to create controllers for managing database operations using Prisma, focusing on adding objects with relationships and retrieving data with various techniques.
@@ -79,6 +96,22 @@ This guide explains how to create controllers for managing database operations u
   - [Table of Contents](#table-of-contents)
   - [Adding Data with Relationships](#adding-data-with-relationships)
     - [Creating a Movie Controller 🎬](#creating-a-movie-controller-)
+- [Prisma Controllers and Relationships Guide 🛠️](#prisma-controllers-and-relationships-guide-️-1)
+  - [Table of Contents](#table-of-contents-1)
+  - [Adding Data with Relationships](#adding-data-with-relationships-1)
+    - [Creating a Movie Controller 🎬](#creating-a-movie-controller--1)
+  - [Initializing Relationships 🧩](#initializing-relationships-)
+  - [Data Retrieval Techniques](#data-retrieval-techniques)
+  - [Field Exclusion/Inclusion 🛠️](#field-exclusioninclusion-️)
+    - [Exclude Fields Example](#exclude-fields-example)
+    - [Include Fields Example](#include-fields-example)
+  - [Handling One-to-Many Relationships 🌳](#handling-one-to-many-relationships-)
+  - [Field Exclusion/Inclusion 🛠️](#field-exclusioninclusion-️-1)
+    - [Exclude Fields Example](#exclude-fields-example-1)
+    - [Include Fields Example](#include-fields-example-1)
+    - [Handling One-to-Many Relationships 🌳](#handling-one-to-many-relationships--1)
+  - [Implementing Pagination 📄](#implementing-pagination-)
+
 
 ## Adding Data with Relationships
 
@@ -100,7 +133,7 @@ async function addMovie(data) {
 
 Back to Top
 
-Initializing Relationships 🧩
+## Initializing Relationships 🧩
 To establish relationships when adding new records, use methods like connectOrCreate to link related entities.
 
 Example: Adding a Movie with Genre 🎥
@@ -129,7 +162,7 @@ addMovieWithGenre('Inception', 'Sci-Fi').then(movie => {
 
 Back to Top
 
-Data Retrieval Techniques
+## Data Retrieval Techniques
 Retrieving with Parameters 🔍
 Filter data retrieval by specific parameters to refine your queries.
 
@@ -140,13 +173,15 @@ async function getMoviesByTitle(title: string) {
     where: { title },
   });
 }
-Back to Top
+```
 
-Field Exclusion/Inclusion 🛠️
+
+
+## Field Exclusion/Inclusion 🛠️
 Control the shape of returned data by specifying which fields to include or exclude.
 
-Exclude Fields Example
-typescript
+### Exclude Fields Example
+```typescript
 Copy code
 async function getMovieDetailsExcludingCreatedAt(movieId: string) {
   return await prisma.movie.findUnique({
@@ -161,7 +196,7 @@ async function getMovieDetailsExcludingCreatedAt(movieId: string) {
 }
 ```
 
-Include Fields Example
+### Include Fields Example
 
 ```typescript
 Copy code
@@ -177,9 +212,7 @@ async function getMovieDetailsIncludingSpecificFields(movieId: string) {
 }
 ```
 
-Back to Top
-
-Handling One-to-Many Relationships 🌳
+## Handling One-to-Many Relationships 🌳
 Retrieve related entities in one-to-many relationships efficiently.
 
 ```typescript
@@ -192,27 +225,13 @@ async function getGenreWithMovies(genreId: string) {
 }
 ```
 
-Back to Top
 
-Implementing Pagination 📄
-Use pagination to manage large datasets, specifying how many records to fetch and how many to skip.
 
-```typescript
-Copy code
-async function getMoviesPaginated(page: number, pageSize: number = 10) {
-  return await prisma.movie.findMany({
-    take: pageSize,
-    skip: (page - 1) * pageSize,
-  });
-}
-```
 
-Back to Top
-
-Field Exclusion/Inclusion 🛠️
+## Field Exclusion/Inclusion 🛠️
 Control the shape of returned data by specifying which fields to include or exclude.
 
-Exclude Fields Example
+### Exclude Fields Example
 
 ```typescript
 Copy code
@@ -229,7 +248,7 @@ async function getMovieDetailsExcludingCreatedAt(movieId: string) {
 }
 ```
 
-Include Fields Example
+### Include Fields Example
 
 ```typescript
 Copy code
@@ -245,9 +264,8 @@ async function getMovieDetailsIncludingSpecificFields(movieId: string) {
 }
 ```
 
-Back to Top
 
-Handling One-to-Many Relationships 🌳
+### Handling One-to-Many Relationships 🌳
 Retrieve related entities in one-to-many relationships efficiently.
 
 ```typescript
@@ -262,7 +280,7 @@ async function getGenreWithMovies(genreId: string) {
 
 Back to Top
 
-Implementing Pagination 📄
+## Implementing Pagination 📄
 Use pagination to manage large datasets, specifying how many records to fetch and how many to skip.
 
 ```typescript
@@ -274,3 +292,14 @@ async function getMoviesPaginated(page: number, pageSize: number = 10) {
   });
 }
 ```
+---
+<div align="right">
+[Using Data](axios.md)
+</div>
+
+<div align="left">
+  [Back to top](#table-of-contents)
+</div>
+<div align="center">
+  [Back Home](../README.md)
+</div>
