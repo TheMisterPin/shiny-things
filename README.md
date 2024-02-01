@@ -27,7 +27,7 @@ A collection of Prisma schema examples, queries, and other Prisma related goodie
 
 ### Axios Snippets 📘
 
-A collection of Axios examples, including fetching the data, and displaying it in React [Navigate to Prisma Snippets](post/Axios.md)
+A collection of Axios examples, including fetching the data, and displaying it in React [Navigate to Axios](post/axios.md)
 
 ### More Shiny Things ✨
 
