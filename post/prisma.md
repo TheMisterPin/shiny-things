@@ -63,5 +63,5 @@ model Post {
 - 📚 **Referencing Documents**: Store the IDs of the related documents. This is similar to how relationships are handled in SQL databases.
 
 ---
-[Back to top](#prisma-schema-explanation-📘)
+[Back to top](#table-of-contents)
 [Back Home](../README.md)
