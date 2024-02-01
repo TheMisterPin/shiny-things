@@ -89,15 +89,15 @@ async function fetchData(params: UrlParams): Promise<any> {
 
 ### Checklist for Data Retrieval Function
 
-Error Handling: Implement try-catch blocks to handle and log errors. ❗
-Type Safety: Use TypeScript interfaces or types for parameters and responses to ensure type safety. 🔒
-HTTP Method Appropriateness: Use the correct HTTP method (get, post, etc.) based on the action. 🚦
-Parameter Encoding: Ensure dynamic parameters are correctly encoded in the URL. 🔗
-Response Data Parsing: Parse and optionally transform the response data before returning it. 📝
-Timeout Handling: Implement timeout handling to manage long-running requests gracefully. ⏳
-Cancellation Support: Consider supporting request cancellation if your application requires it. 🛑
-Conclusion
-By following this checklist, you'll set up a robust mechanism for making dynamic API requests with Axios in a TypeScript application. Ensure to test your implementation thoroughly and adapt the configuration to fit your project's specific requirements.
+- [ ] **Error Handling:** Implement try-catch blocks to handle and log errors. ❗
+- [ ] **Type Safety:** Use TypeScript interfaces or types for parameters and responses to ensure type safety. 🔒
+- [ ] **HTTP Method Appropriateness:** Use the correct HTTP method (get, post, etc.) based on the action. 🚦
+- [ ] **Parameter Encoding:** Ensure dynamic parameters are correctly encoded in the URL. 🔗
+- [ ] **Response Data Parsing:** Parse and optionally transform the response data before returning it. 📝
+- [ ] **Timeout Handling:** Implement timeout handling to manage long-running requests gracefully. ⏳
+- [ ] **Cancellation Support:** Consider supporting request cancellation if your application requires it. 🛑
+
+**Conclusion:** By following this checklist, you’ll set up a robust mechanism for making dynamic API requests with Axios in a TypeScript application. Ensure to test your implementation thoroughly and adapt the configuration to fit your project’s specific requirements.
 
 ## Step 4: Handling Nested Objects in Data Transformation
 
@@ -163,7 +163,7 @@ async function fetchData(params: UrlParams): Promise<TransformedData[]> {
 }
 ```
 
-## Extended Checklist for Data Transformation with Nested Objects
+### Extended Checklist for Data Transformation with Nested Objects
 
 Nested Object Mapping: Ensure the transformation logic accurately maps and transforms nested objects. 🔄
 Complex Type Safety: Update TypeScript interfaces to reflect nested structures accurately. 🔍
@@ -234,12 +234,12 @@ return (
 
 ### Checklist for Data Display in React Components
 
-State Management: Properly manage component state for data, loading, and errors. ✔️
-Effect Hook Usage: Correctly fetch data within useEffect to avoid unnecessary re-renders. 🔄
-Error Handling: Implement robust error handling within the data fetching logic. ❗
-Conditional Rendering: Efficiently handle the rendering based on the component's state. 🎭
-Type Safety: Ensure your component and data handling logic adhere to TypeScript's type safety. 🔒
-Performance Optimization: Consider memoizing components or data transformation logic if the dataset is large or complex. 🚀
-Accessibility: Ensure that the rendered UI is accessible, including proper use of semantic HTML and ARIA attributes where applicable. ♿
-Conclusion
-Integrating Axios with React and TypeScript to fetch and display data involves setting up state management, fetching data on component mount, and rendering the data with conditional rendering based on the state. This guide provides a structured approach to implementing this pattern in your application, ensuring type safety and efficient data handling.
+- [x] **State Management:** Properly manage component state for data, loading, and errors. ✔️
+- [x] **Effect Hook Usage:** Correctly fetch data within useEffect to avoid unnecessary re-renders. 🔄
+- [ ] **Error Handling:** Implement robust error handling within the data fetching logic. ❗
+- [x] **Conditional Rendering:** Efficiently handle the rendering based on the component’s state. 🎭
+- [x] **Type Safety:** Ensure your component and data handling logic adhere to TypeScript’s type safety. 🔒
+- [ ] **Performance Optimization:** Consider memoizing components or data transformation logic if the dataset is large or complex. 🚀
+- [x] **Accessibility:** Ensure that the rendered UI is accessible, including proper use of semantic HTML and ARIA attributes where applicable. ♿
+
+**Conclusion:** Integrating Axios with React and TypeScript to fetch and display data involves setting up state management, fetching data on component mount, and rendering the data with conditional rendering based on the state. This guide provides a structured approach to implementing this pattern in your application, ensuring type safety and efficient data handling.
