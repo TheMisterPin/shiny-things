@@ -1,7 +1,5 @@
 # Prisma📘
-
 -[Prisma Controllers](prisma.controllers.md)
-
 ## Table of Contents
 
 - [Prisma📘](#prisma)
@@ -69,12 +67,18 @@ model Post {
 
 ---
 <div align="right">
+
 [Using Data](axios.md)
+
 </div>
 
 <div align="left">
-  [Back to top](#table-of-contents)
+
+[Back to top](#table-of-contents)
+
 </div>
 <div align="center">
+
   [Back Home](../README.md)
+  
 </div>

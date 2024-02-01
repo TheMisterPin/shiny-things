@@ -243,3 +243,20 @@ Performance Optimization: Consider memoizing components or data transformation l
 Accessibility: Ensure that the rendered UI is accessible, including proper use of semantic HTML and ARIA attributes where applicable. ♿
 Conclusion
 Integrating Axios with React and TypeScript to fetch and display data involves setting up state management, fetching data on component mount, and rendering the data with conditional rendering based on the state. This guide provides a structured approach to implementing this pattern in your application, ensuring type safety and efficient data handling.
+
+<!-- <div align="right">
+
+[Using Data](axios.md)
+
+</div> -->
+
+<div align="left">
+
+[Back to top](#table-of-contents)
+
+</div>
+<div align="center">
+
+  [Back Home](../README.md)
+  
+</div>

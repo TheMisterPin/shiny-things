@@ -34,7 +34,9 @@ async function addMovie(data) {
 }
 ```
 
-Back to Top
+[Back to top](#table-of-contents)
+
+
 
 ### Initializing Relationships 🧩
 
