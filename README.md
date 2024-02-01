@@ -9,6 +9,7 @@ Welcome to my personal project repository where I store various code snippets an
     - [About This Project 📚](#about-this-project-)
     - [Technologies Used 💻](#technologies-used-)
     - [Prisma Snippets 📘](#prisma-snippets-)
+    - [Axios Snippets 📘](#axios-snippets-)
     - [More Shiny Things ✨](#more-shiny-things-)
 
 ### About This Project 📚
@@ -24,12 +25,18 @@ This repository serves as my digital playground and memory lane. Here, I experim
 
 A collection of Prisma schema examples, queries, and other Prisma related goodies. [Navigate to Prisma Snippets](post/prisma.md)
 
+### Axios Snippets 📘
+
+A collection of Axios examples, including fetching the data, and displaying it in React [Navigate to Prisma Snippets](post/Axios.md)
+
 ### More Shiny Things ✨
 
 Other interesting projects and experiments I've worked on. They range from small scripts to experimental UI components.
 
 ---
 
-Feel free to explore and get inspired! For any questions or collaborations, reach out to me on [GitHub](your-github-profile-link).
+Feel free to explore and get inspired! For any questions or collaborations, reach out to me on [GitHub]([TheMisterPin](https://github.com/TheMisterPin/)).
+
+
 
 [Back to Top](#my-snippets-and-shiny-things-repository-)

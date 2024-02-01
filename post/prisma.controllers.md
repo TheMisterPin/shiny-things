@@ -274,5 +274,3 @@ async function getMoviesPaginated(page: number, pageSize: number = 10) {
   });
 }
 ```
-
-Back to Top

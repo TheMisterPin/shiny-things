@@ -1,13 +1,18 @@
-# Prisma Schema Explanation 📘
+# Prisma📘
+
+-[Prisma Controllers](prisma.controllers.md)
 
 ## Table of Contents
 
-- What is Prisma? 🌟
-- Prisma Schema 📄
-- One-to-One Relationships 🧩
-- One-to-Many Relationships 🌳
-- Many-to-Many Relationships 🌐
-- Handling One-to-Many in MongoDB without Native Support 🛠️
+- [Prisma📘](#prisma)
+  - [Table of Contents](#table-of-contents)
+    - [What is Prisma? 🌟](#what-is-prisma-)
+    - [Prisma Schema 📄](#prisma-schema-)
+      - [Schema](#schema)
+    - [One-to-One Relationships 🧩](#one-to-one-relationships-)
+    - [One-to-Many Relationships 🌳](#one-to-many-relationships-)
+    - [Many-to-Many Relationships 🌐](#many-to-many-relationships-)
+    - [Handling One-to-Many in MongoDB without Native Support 🛠️](#handling-one-to-many-in-mongodb-without-native-support-️)
 
 ### What is Prisma? 🌟
 
@@ -63,5 +68,13 @@ model Post {
 - 📚 **Referencing Documents**: Store the IDs of the related documents. This is similar to how relationships are handled in SQL databases.
 
 ---
-[Back to top](#table-of-contents)
-[Back Home](../README.md)
+<div align="right">
+[Using Data](axios.md)
+</div>
+
+<div align="left">
+  [Back to top](#table-of-contents)
+</div>
+<div align="center">
+  [Back Home](../README.md)
+</div>
